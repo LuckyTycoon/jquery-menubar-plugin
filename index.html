@@ -4,15 +4,13 @@
     <meta charset="utf-8">
     <title>MA5 mobile menu</title>
 
-    <!-- Site Stylesheets -->
-    <link href="./css/site.min.css" rel="stylesheet" type="text/css">
-    <!-- Site JavaScripts -->
     <script src="./js/jquery.js"></script>
-    <script src="./js/site.min.js"></script>
+    <link rel="stylesheet" href="./webfonts/font-awesome.min.css">
+    <link rel="stylesheet" href="./webfonts/fontawesome5-all.min.css">
 
     <!-- ma5menu -->
-    <link href="./css/ma5-menu.min.css" rel="stylesheet" type="text/css">
-    <script src="./js/ma5-menu.min.js"></script>
+    <link href="./css/ma5-menu.css" rel="stylesheet" type="text/css">
+    <script src="./js/ma5-menu.js"></script>
 
     <!-- Prmenu -->
     <script src="js/jquery.prmenu.js"></script>
@@ -22,17 +20,15 @@
     <script>
         let toggle = $('<button class="ma5menu__toggle" style="display: none;"></button>');
         $(document).ready(function () {
+
             $('body').append(toggle);
             ma5menu({
                 menu: '.site-menu',
                 activeClass: 'active',
                 position: 'left',
-                closeOnBodyClick: false
+                closeOnBodyClick: true
             });
 
-            toggle.trigger('click');
-        });
-        $(document).ready(function(){
             $('.site-menu').prmenu({
                 "fontsize": "14",
                 "height": "50",
@@ -40,17 +36,15 @@
                 "linkbgcolor": "#286090",
                 "linktextcolor": "#ffffff",
                 "linktextweight": "400",
-                "linktextfont": "sans-serif",
-                "hoverdark": false
             });
-		});
+
+        });
     </script>
 
 </head>
-<body class="preload">
-        
-<!-- mobile menu toggle button end -->
-    <!-- source for mobile menu start -->
+<body>
+
+<div>
     <ul class="site-menu">
         <li>
             <a href="index-page.html">Shop</a>
@@ -121,8 +115,6 @@
         </li>
         <li><a href="index-page.html">Contact</a></li>
     </ul>
-    <!-- source for mobile menu end -->
-
 </div>
 
 </body>
