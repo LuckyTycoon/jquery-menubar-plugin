@@ -30,7 +30,7 @@ jobs:
       - uses: z0al/dependent-issues@v1.5.2
         env:
           # (Required) The token to use to make API calls to GitHub.
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
           # (Optional) The token to use to make API calls to GitHub for remote repos.
           # GITHUB_READ_TOKEN: ${{ secrets.GITHUB_READ_TOKEN }}
 
