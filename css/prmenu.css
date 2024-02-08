@@ -206,20 +206,19 @@ and (max-width : 959px) {
 	}
 
 	div.prmenu_container ul li.menu-toggle a {
-    text-align: right;
 		overflow: hidden;
 		display: block;
 		width: 100%;
 		font-size: 18px;
 		text-decoration: none;
-		vertical-align: top;
 	}
 
 	div.prmenu_container ul li.menu-toggle a:after {
-		content: url('../images/menu-icon.png');
+		content: "\f0c9";
 		margin-left: 10px;
 		vertical-align: top;
 		margin-right: 1%;
+		font-family: 'Font Awesome 5 Pro';
 	}
 
 
