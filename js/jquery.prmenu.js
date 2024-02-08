@@ -84,21 +84,7 @@
 
 			var menu_open = false;
 
-			plugin.o.el.siblings('ul.menu-toggle').find('a').click(function() {
-				if(plugin.o.el.hasClass('hide')) {
-					menu_open = true;
-					plugin.o.el.removeClass('hide');
-					plugin.o.el.addClass('block');
-				} else if(plugin.o.el.hasClass('block')) {
-					menu_open = false;
-					plugin.o.el.removeClass('block');
-					plugin.o.el.addClass('hide');
-				} else {
-					menu_open = true;
-					plugin.o.el.removeClass('hide');
-					plugin.o.el.addClass('block');
-				}
-			});
+			plugin.o.el.siblings('ul.menu-toggle').find('a').click(openMA5Menu);
 
 			$(window).resize(function() {
 					plugin.setupMenuDefaults();
